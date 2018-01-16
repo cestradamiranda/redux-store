@@ -10,7 +10,7 @@ export class Store {
 
     this.subscribers = [];
     this.reducers = reducers;
-    this.state = initialState;
+    this.state = this.reduce(initialState, {});
 
   }
 
